@@ -10,32 +10,24 @@ _This application allows the user to order a pizza with their toppings of choice
 
 ##Specs
 
-* _The program creates an empty pizza object._
+* _The application creates an empty pizza object._
 
 
-* _The program creates a method to differentiate between player turns_
-  * _Example Input: player one clicks on a space_
-  * _Example Output: icon of either alien or human appears in space to mark the players turn._
+* _The application creates a function to collect user inputs and add them to the pizza_
+  * _Example Input: user selects "olives" as a topping_
+  * _Example Output: "Olives" are added to the pizza_
 
-* _The program creates a method to determine if Aliens or Humans go first using a randomizer_
-  * _Example Input: Player one clicks on a space on the playing board_
-  * _Example Output: Alien or Human avatar appears and is assigned throughout the rest of the game_
+* _The application creates a prototype to calculate the price of the pizza _
+  * _Example Input: User selects "Large" pie with 2 toppings_
+  * _Example Output: application outputs $17_
 
-* _The program creates a function to prevent player from clicking on and assigning square more than once._
-  * _Example Input: Player attempts to click on already assigned square_
-  * _Example Output: Alert pops up "Cheaters Never Win"_
+* _The application creates a function to show the user their order summary and total for the pie_
+  * _Example Input: User selects "Large" pie with Jalapenós & Olives._
+  * _Example Output: application shows order summary screen displaying text "We've got your order of a Large pizza with,          Jalapenós, Olives. Your total is $15 and we'll have it ready in 30 minutes or less :)"_
 
-* _Number of turns is limited to 9_
-  * _Example Input: Player clicks on final square (#9)_
-  * _Example Output: "Cheaters never Win"alert pops up_
-
-* _The program recognizes when a player has won by clicking 3 in a row_
-  * _Example Input: Player clicks all three squares on a horizontal, vertical or diagonal row_
-  * _Example Output: Program denotes winner and sends alert announcing winner_
-
-* _Program shows wining screens corresponding to each unique winning scenario_
-  * _Example Input: Game ends in tie (no player achieves 3 in a row_
-  * _Example Output: image of "cat" appears with message displaying "Cat Always Wins!!"_
+* _The application has a function to add an "&" into the output of toppings_
+  * _Example Input: User selects "Large" pie with Jalapenós, Olives, Pepperoni._
+  * _Example Output: "We've got your order of a Large pizza with, Jalapenós, Olives & Pepperoni. Your total is $15 and we'll have it ready in 30 minutes or less :)"_
 
 
 ## Setup/Installation Requirements
