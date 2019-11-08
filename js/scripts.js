@@ -19,17 +19,18 @@ Pizza.prototype.getPrice = function(){
   }
   return this.price;
 }
-
-var newToppings = " "
-for(i=0;  1 < toppingArray.length; i++){
-  newToppings.append(toppingArray [i])
-  if (i === toppingArray.length - 1) {
-    newToppings.append(" and ");
-  } else if (i < toppingArray.length -1) && (i > 0){
-    newToppings.append(", ")
-  }  
+Pizza.prototype.makeAnd = function(toppingArray){
+  var newToppings = " "
+  for(i=0;  1 <toppingArray.length; i++){
+    $(newToppings).append(toppingArray[i])
+    if (i === toppingArray.length - 1) {
+      $(newToppings).append(" and ");
+    } else if ((i < toppingArray.length -1) && (i > 0)){
+      $(newToppings).append(", ")
+    }
+  }
+  return newToppings;
 }
-
 
 
 
@@ -42,16 +43,15 @@ $(document).ready(function(){
     event.preventDefault();
     var toppingArray = [];
     var sizeInput = $("#size").val()
-    console.log(sizeInput);
     var toppingsInput = $("input:checkbox[name=toppings-select]:checked");
     toppingsInput.each(function(){
-      console.log($(this).val());
       toppingArray.push($(this).val());
     });
 
     var myPizza = new Pizza (sizeInput, toppingArray)
     var price = myPizza.getPrice();
-    var toppingz = toppingArray.join(", ");
+    var toppingz = myPizza.makeAnd(toppingArray);
+
 
  $("#sz").text(sizeInput);
  $("#tp").text(toppingz);
