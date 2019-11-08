@@ -1,12 +1,12 @@
 // Bussiness Logic
 function Pizza(size,toppings){
   this.size = size;
-  this.toppings = topping;
+  this.toppings = toppings;
   this.price = 0;
 }
 
-Pizza.protoype.getPrice = function(){
-  this.toppings.foreach(function(topping) {
+Pizza.prototype.getPrice = function(){
+  $(this.toppings).each(function() {
     this.price += 1;
   })
   if (this.size === "s"){
@@ -27,17 +27,16 @@ Pizza.protoype.getPrice = function(){
 $(document).ready(function(){
   $("form#order").submit(function(event) {
     event.preventDefault();
-    var toppingsInput = $("input:checkbox[name=toppings-select]:checked").each();
     var toppingArray = [];
     var sizeInput = $("#size").val()
+    console.log(sizeInput);
+    var toppingsInput = $("input:checkbox[name=toppings-select]:checked");
+    toppingsInput.each(function(){
+      console.log($(this).val());
+      toppingArray.push(toppingsInput.val());
+    });
 
-toppingsInput.forEach(function(toppingsInput){
-toppingArray.push(toppingsInput.val());
-});
-
-  var myPizza = new Pizza (sizeInput, toppingArray)
-  var price = myPizza.getPrice();
-
-
+    var myPizza = new Pizza (sizeInput, toppingArray)
+    var price = myPizza.getPrice();
   });
 });
