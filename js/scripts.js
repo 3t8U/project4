@@ -38,11 +38,11 @@ $(document).ready(function(){
 
     var myPizza = new Pizza (sizeInput, toppingArray)
     var price = myPizza.getPrice();
-    var toppingz = toppingArray.join(",");
+    var toppingz = toppingArray.join(", ");
 
  $("#sz").text(sizeInput);
  $("#tp").text(toppingz);
- $("#tl").text(price);
+ $("#tl").text( "$" + price);
 
   });
 });
