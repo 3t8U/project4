@@ -20,6 +20,19 @@ Pizza.prototype.getPrice = function(){
   return this.price;
 }
 
+var newToppings = " "
+for(i=0;  1 < toppingArray.length; i++){
+  newToppings.append(toppingArray [i])
+  if (i === toppingArray.length - 1) {
+    newToppings.append(" and ");
+  } else if (i < toppingArray.length -1) && (i > 0){
+    newToppings.append(", ")
+  }  
+}
+
+
+
+
 
 
 
