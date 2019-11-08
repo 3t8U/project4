@@ -13,7 +13,7 @@
     <h1>Welcome to Nate's Pizza!</h1>
     <img src="img/PizzaHut.jpg" alt="Delicious Pizza Picture">
   </div>
-  <div class="container">
+  <div id="order-form" class="container">
     <div class="jumbotron">
       <form id="order">
         <h2>Place your order today!</h2>
@@ -22,20 +22,27 @@
         <label  class = "select" for="size">Select the size of your pie</label>
         <select class="form-control" id="size">
           <option value="" selected disabled>Please select</option>
-          <option value = "s">Small $5</option>
-          <option value = "m">Medium $10</option>
-          <option value = "l">Large $15</option>
+          <option value = "Small">Small $5</option>
+          <option value = "Medium">Medium $10</option>
+          <option value = "Large">Large $15</option>
         </select>
 
         <label for="toppings"></label>
         <p class="select">Now, select your toppings!</p>
-        <input type="checkbox" name="toppings-select" value="pep">Pepperoni +$1<br>
-        <input type="checkbox" name="toppings-select" value="jap">Jalapenos +$1<br>
-        <input type="checkbox" name="toppings-select" value="oli">Olives +$1<br>
+        <input type="checkbox" name="toppings-select" value="Pepperoni">Pepperoni +$1<br>
+        <input type="checkbox" name="toppings-select" value="Jalapenos">Jalapenos +$1<br>
+        <input type="checkbox" name="toppings-select" value="Olives">Olives +$1<br>
         <br>
         <br>
         <button type="submit" class="danger">Make my pie now!!!</button>
       </form>
+      <div id= "results" class="container">
+        <div class="jumbotron">
+          <h1>Your Order:</h1>
+          <p>We've got your order of a <span id="sz"></span> pizza with, <span id="tp"></span>.
+          <br>Your total is <span id="tl"></span> and we'll have it ready in 30 minutes or less :)</p>
+        </div>
+      </div>
     </div>
   </div>
 
