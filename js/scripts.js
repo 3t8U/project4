@@ -8,20 +8,16 @@ function Pizza(size,toppings){
 Pizza.protoype.getPrice = function(){
   this.toppings.foreach(function(topping) {
     this.price += 1;
-  }
+  })
   if (this.size === "s"){
     this.price += 5;
   } else if (this.size === "m") {
     this.price += 10;
   } else {
-    this.price += 15,
+    this.price += 15;
+
   }
-  return thisprice;
-
-
-
-
-}
+  return this.price;
 }
 
 
@@ -35,6 +31,12 @@ $(document).ready(function(){
     var toppingArray = [];
     var sizeInput = $("#size").val()
 
+toppingsInput.forEach(function(toppingsInput){
+toppingArray.push(toppingsInput.val());
+});
+
+  var myPizza = new Pizza (sizeInput, toppingArray)
+  var price = myPizza.getPrice();
 
 
   });
