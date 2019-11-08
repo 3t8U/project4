@@ -1,16 +1,16 @@
-# _Tic Tac Space_
+# _Nate's Pizza_
 
-#### _This application is an interpretation of the classic game "Tic Tac Toe", 11-8-2019_
+#### _This is an application to order a pizza, 11-8-2019_
 
-#### By _**Nate Powers & Jaime Gensler*_
+#### By _**Nate Powers**_
 
 ## Description
 
-_This application allows the user to play a thematically stylized game of Tic Tac Toe in the form of "Aliens vs Humans"_
+_This application allows the user to order a pizza with their toppings of choice_
 
 ##Specs
 
-* _The program creates a board to play on._
+* _The program creates an empty pizza object._
 
 
 * _The program creates a method to differentiate between player turns_
@@ -41,11 +41,9 @@ _This application allows the user to play a thematically stylized game of Tic Ta
 ## Setup/Installation Requirements
 
 * _Open HTML page in browser_
-* _Click on the "Defend the Earth "button"_
-* _First player clicks on a square located on the game board_
-* _Second player follows with their turn_
-* _Players continue to play until one player wins or all 9 squares have been filled._
-* _Refresh browser and prepare for rematch_
+* _Select the size and toppings you would like on your pizza_
+* _After all toppings are selected, click the "Make my pie" button_
+* _See your total and check your order for accuracy_
 
 
 __
@@ -56,11 +54,11 @@ _No known bugs_
 
 ## Support and contact details
 
-_Any questions, comments or contributions please contact Nate Powers (Russellsproutz@Gmail.com) or Jaime Gensler (jaimegensler0@gmail.com)_
+_Any questions, comments or contributions please contact Nate Powers (Russellsproutz@Gmail.com)_
 
 ## Technologies Used
 
-_HTML, CSS, Bootstrap, Git, jQuery and Javascript, and some ancient alien wisdom were used to make this application_
+_HTML, CSS, Bootstrap, Git, jQuery and Javascript, and decades of experience consuming pizza were used to make the application_
 
 ### License
 
