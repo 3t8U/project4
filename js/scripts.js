@@ -20,15 +20,18 @@ Pizza.prototype.getPrice = function(){
   return this.price;
 }
 Pizza.prototype.makeAnd = function(toppingArray){
+  console.log(toppingArray.length);
   var newToppings = " "
-  for(i=0;  1 <toppingArray.length; i++){
-    $(newToppings).append(toppingArray[i])
-    if (i === toppingArray.length - 1) {
-      $(newToppings).append(" and ");
-    } else if ((i < toppingArray.length -1) && (i > 0)){
-      $(newToppings).append(", ")
+  for(i=0;  i < toppingArray.length; i++){
+    console.log(newToppings);
+    newToppings = newToppings.concat(toppingArray[i])
+    if (i === toppingArray.length - 2) {
+      newToppings = newToppings.concat(" and ");
+    } else if (i < toppingArray.length -2) {
+      newToppings = newToppings.concat(", ")
     }
   }
+  console.log(newToppings);
   return newToppings;
 }
 
