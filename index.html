@@ -6,9 +6,36 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Nate's Pizza</title>
   </head>
   <body>
+    <div id="intro" class="jumbotron">
+      <h1>Welcome to Nate's Pizza!</h1>
+      <img src="img/PizzaHut.jpg" alt="Delicious Pizza Picture">
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <form id="order">
+          <h2>Place your order today!</h2>
+          <br>
+          <br>
+        <label  class = "select" for="size">Select the size of your pie</label>
+      <select class="form-control" id="size">
+        <option value="" selected disabled>Please select</option>
+        <option value = "s">Small $5</option>
+        <option value = "m">Medium $10</option>
+        <option value = "l">Large $15</option>
+      </select>
+
+      <label for="toppings"></label>
+      <!-- <select class="form-control" id="toppings"> -->
+        <p class="select">Now, select your toppings!</p>
+          <input type="checkbox" name="toppings-select" value="pep">Pepperoni +$1<br>
+          <input type="checkbox" name="toppings-select" value="jap">Jalapenos +$1<br>
+          <input type="checkbox" name="toppings-select" value="oli">Olives +$1<br>
+        </form>
+      </div>
+    </div>
 
   </body>
 </html>

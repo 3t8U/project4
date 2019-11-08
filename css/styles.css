@@ -1,0 +1,26 @@
+.jumbotron {
+text-align: center;
+background-color: #a88332;
+font-family: monospace;
+border-radius: 5%;
+}
+
+#intro {
+margin-left: 5em;
+margin-right: 5em;
+margin-top: 2em;
+
+
+}
+body {
+background-color: #328ea8;
+}
+
+label {
+  text-align: center;
+}
+
+.select{
+  font-size: 20px;
+  text-decoration: underline;
+}
