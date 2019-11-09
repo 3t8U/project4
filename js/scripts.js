@@ -6,9 +6,10 @@ function Pizza(size,toppings){
 }
 
 Pizza.prototype.getPrice = function(){
-  $(this.toppings).each(function() {
+  console.log(this.toppings);
+  for(i=0; i< this.toppings.length; i++) {
     this.price += 1;
-  })
+  }
   if (this.size === "Small"){
     this.price += 5;
   } else if (this.size === "Medium") {
@@ -23,7 +24,6 @@ Pizza.prototype.makeAnd = function(toppingArray){
   console.log(toppingArray.length);
   var newToppings = " "
   for(i=0;  i < toppingArray.length; i++){
-    console.log(newToppings);
     newToppings = newToppings.concat(toppingArray[i])
     if (i === toppingArray.length - 2) {
       newToppings = newToppings.concat(" and ");
@@ -50,7 +50,7 @@ $(document).ready(function(){
       toppingArray.push($(this).val());
     });
 
-    var myPizza = new Pizza (sizeInput, toppingArray)
+    var myPizza = new Pizza (sizeInput, toppingsInput)
     var price = myPizza.getPrice();
     var toppingz = myPizza.makeAnd(toppingArray);
 
