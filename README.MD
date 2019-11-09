@@ -23,7 +23,7 @@ _This application allows the user to order a pizza with their toppings of choice
 
 * _The application creates a function to show the user their order summary and total for the pie_
   * _Example Input: User selects "Large" pie with Jalapenós & Olives._
-  * _Example Output: application shows order summary screen displaying text "We've got your order of a Large pizza with,          Jalapenós, Olives. Your total is $15 and we'll have it ready in 30 minutes or less :)"_
+  * _Example Output: application shows order summary screen displaying text "We've got your order of a Large pizza with        Jalapenós, Olives. Your total is $15 and we'll have it ready in 30 minutes or less :)"_
 
 * _The application has a function to add an "&" into the output of toppings_
   * _Example Input: User selects "Large" pie with Jalapenós, Olives, Pepperoni._
@@ -75,4 +75,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.*
 
-Copyright (c) 2019 **_Jaime Gensler, Nate Powers_**
+Copyright (c) 2019 **_Nate Powers_**

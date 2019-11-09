@@ -31,7 +31,6 @@ Pizza.prototype.makeAnd = function(toppingArray){
       newToppings = newToppings.concat(", ")
     }
   }
-  console.log(newToppings);
   return newToppings;
 }
 
@@ -56,9 +55,10 @@ $(document).ready(function(){
     var toppingz = myPizza.makeAnd(toppingArray);
 
 
- $("#sz").text(sizeInput);
- $("#tp").text(toppingz);
- $("#tl").text( "$" + price);
+    $("#sz").text(sizeInput);
+    $("#tp").text(toppingz);
+    $("#tl").text( "$" + price);
 
+    $("#results").show();
   });
 });

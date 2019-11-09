@@ -24,3 +24,13 @@ label {
   font-size: 20px;
   text-decoration: underline;
 }
+
+#results {
+  display:none;
+
+}
+
+#return {
+  font-size: 25px;
+
+}
